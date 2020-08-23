@@ -1,0 +1,31 @@
+.logo {
+  animation: bounce-in 1s ease;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 20px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  width: 250px;
+
+  img {
+    width: 100%;
+  }
+}
+
+@keyframes bounce-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

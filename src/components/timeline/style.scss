@@ -1,0 +1,57 @@
+.timeline {
+  &-line {
+    border-left: 2px solid slategray;
+    height: 100%;
+    left: calc(50% - 1px);
+    margin-top: 20px;
+    position: absolute;
+    z-index: -1;
+  }
+
+  &-wrapper {
+    margin: 20px 0;
+    position: relative;
+
+    $wrapper: &;
+
+    &:nth-child(even) {
+      right: calc(50% + 20px);
+      text-align: right;
+
+      #{$wrapper}-indicator {
+        right: -26px;
+      }
+    }
+
+    &:nth-child(odd) {
+      left: calc(50% + 20px);
+      text-align: left;
+
+      #{$wrapper}-indicator {
+        left: -26px;
+      }
+    }
+
+    &-indicator {
+      animation-delay: 800ms;
+      position: absolute;
+      top: 10px;
+      width: 12px;
+    }
+
+    &-year {
+      color: slate;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    &-location {
+      color: lightgray;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: rgb(200, 0, 0);
+    }
+  }
+}

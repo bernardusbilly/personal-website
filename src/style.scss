@@ -1,0 +1,143 @@
+$superlight-gray: rgb(240, 240, 240);
+$light-gray: rgb(150, 150, 150);
+$dark-gray: rgb(50, 50, 50);
+
+$red: rgb(235, 70, 70);
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.app {
+  font-family: 'Abel', sans-serif;
+
+  .loading-wrapper {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1000;
+
+    .loading-gif {
+      height: 80px;
+      width: 80px;
+    }
+  }
+
+  .introduction {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    &-header {
+      left: 10vw;
+      position: absolute;
+      text-align: left;
+      top: 10vh;
+
+      &-main {
+        font-size: 18px;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+      }
+
+      &-sub {
+        color: $light-gray;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .skills {
+    background-color: white;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    position: relative;
+
+    &-summary {
+      display: inline-block;
+      left: 20vw;
+      position: relative;
+      text-align: right;
+      vertical-align: middle;
+      width: 35vw;
+
+      &-header {
+        font-size: 80px;
+        opacity: 0.1;
+      }
+    }
+
+    &-list {
+      display: inline-block;
+      left: 25vw;
+      overflow: hidden;
+      position: relative;
+      vertical-align: middle;
+      width: 35vw;
+    }
+  }
+
+  .biodata {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    &-header {
+      font-size: 80px;
+      opacity: 0.1;
+    }
+  }
+
+  .projects {
+    margin-top: 10vh;
+
+    &-header {
+      display: inline-block;
+      font-size: 80px;
+      left: 10vw;
+      opacity: 0.1;
+      position: relative;
+    }
+  }
+
+  .contact {
+    height: 250px;
+    margin-top: 10vh;
+    position: relative;
+    text-align: center;
+
+    &-left,
+    &-right {
+      color: $light-gray;
+      display: inline-block;
+      vertical-align: top;
+      width: 40vw;
+
+      &-header {
+        color: $dark-gray;
+        padding-bottom: 20px;
+      }
+    }
+    &-copyright {
+      font-size: 14px;
+      margin-top: 80px;
+    }
+  }
+}
